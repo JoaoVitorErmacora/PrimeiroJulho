@@ -18,7 +18,10 @@ import { StylesOnboarding } from "../styles/StylesOnboarding";
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 import InputComp from "../components/InputComp";
 
+import { useNavigation } from "@react-navigation/native";
+
 export default function SignUp() {
+  const navigation = useNavigation();
   return (
     <ImageBackground
       style={stylesSign.container}
