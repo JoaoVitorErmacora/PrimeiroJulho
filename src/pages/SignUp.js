@@ -25,7 +25,7 @@ export default function SignUp() {
   return (
     <ImageBackground
       style={stylesSign.container}
-      source={require("../assets/images/fundo.jpg")}
+      source={require("../assets/images/cinema.jpg")}
       blurRadius={15}
     >
       <View
@@ -38,7 +38,7 @@ export default function SignUp() {
         }}
       >
         <MaterialCommunityIcons
-          name="flower-tulip-outline"
+          name="movie-roll"
           size={50}
           color="white"
           style={{ marginBottom: 20 }}

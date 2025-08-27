@@ -3,15 +3,19 @@ import { StyleSheet } from "react-native";
 export const StylesOnboarding = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "brown",
     alignItems: "center",
     justifyContent: "center",
   },
 
   title: {
-    color: "#000",
+    color: "brown",
     fontSize: 40,
     fontWeight: "bold",
+  },
+
+  txt: {
+    color: "brown",
   },
 
   viewSignUp: {

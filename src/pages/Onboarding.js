@@ -4,9 +4,13 @@ import {
   View,
   TouchableOpacity,
   Pressable,
+  button
+
 } from "react-native";
 
 import { useNavigation } from "@react-navigation/native";
+
+import { Button } from "react-native-web";
 
 import { StatusBar } from "expo-status-bar";
 
@@ -22,19 +26,26 @@ export default function Onboarding() {
   return (
     <ImageBackground
       style={StylesOnboarding.container}
-      source={require("../assets/images/fundo.jpg")}
-      blurRadius={5}
+      source={require("../assets/images/cinema.jpg")}
+      blurRadius={15}
     >
       <MaterialCommunityIcons
-        name="flower-tulip-outline"
+        name="movie-roll"
         size={200}
         color="white"
       />
 
-      <Text style={StylesOnboarding.title}>WELCOME</Text>
+      <Text style={StylesOnboarding.title}>BEM VINDO</Text>
 
-      <Text style={StylesOnboarding.txt}>Do meditation. Stay focused.</Text>
-      <Text style={StylesOnboarding.txt}>Live a healthy life.</Text>
+      <Text style={StylesOnboarding.txt}>Tenha acesso à melhor galeria .</Text>
+      <Text style={StylesOnboarding.txt}>de filmes do Brasil.</Text>
+
+      <TouchableOpacity
+        style={StylesOnboarding.btn}
+        onPress={() => navigation.navigate("galeria")}
+      >
+        <Text style={StylesOnboarding.txt2}>Galeria</Text>
+      </TouchableOpacity>
 
       <TouchableOpacity
         style={StylesOnboarding.btn}
